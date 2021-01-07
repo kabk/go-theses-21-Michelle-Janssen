@@ -35,6 +35,14 @@ h3{
 	text-align: left;
 }
 
+.title{
+	position: -webkit-sticky;
+	position: sticky;
+	background: white;
+	padding-top: 9.5%;
+	top: 9vw;
+}
+
 p{
 	font-family: 'PT Serif', serif;
 	font-size: 1.2vw;
@@ -42,9 +50,106 @@ p{
 	text-align: left;
 }
 
+.sidenav{
+	height: 100%;
+	width: 2vw;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	border-right: 3px solid black;
+	background-color: white;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.4s;
+}
+
+.sidenav a{
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	color: black;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidenav a:hover{
+	color: yellow;
+}
+
+.sidenav .closebtn{
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+
+.rightnav {
+  height: 100%;
+  width: 2vw;
+  position: fixed;
+  border-left: 3px solid black;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 99;
+}
+
+.rightnav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.rightnav a:hover {
+  color: #f1f1f1;
+}
+
+.rightnav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  margin-left: 50px;
+}
+
+li{
+	margin: 10%;
+}
+
+#headerNav{
+	background: white;
+	border-bottom: 3px solid black;
+	position: fixed;
+	float: left;
+	width: 95%;
+	padding: 1.5%;
+	text-align: center;
+	font-family: Calyces-Bold;
+	font-size: 3vw;
+	text-align: center;
+
+}
+
+#headerNav a{
+	text-decoration: none;
+	color: black;
+	text-align: center;
+}
+
+#headerNav a:hover{
+	text-decoration: underline;
+}
+
 #header{
 	background-color: #fff; /* Grey background */
-	border-bottom: 2px solid;
+	border-bottom: 3px solid black;
 	padding: 2.5%; /* Some padding */
 	color: black;
 	position: fixed; /* Fixed position - sit on top of the page */
@@ -56,13 +161,16 @@ p{
 	line-height: 100%;
 	text-align: left;
 	word-spacing: -11px;
+	z-index: 98;
 }
 
-.container{
+
+#container{
 	background-color: white;
 	margin: 2.5%;
 	width: 80%
 	height: 100%;
+	padding: 3% 5%;
 }
 
 hr{
@@ -75,13 +183,28 @@ hr{
 	text-align:left;"
 }
 
+#kronkel{
+	width: 100%;
+	z-index: 1;
+	position: absolute;
+}
+
+.line{
+	background: blue;
+	border-radius: 0px;
+	width: 0%;
+	z-index: 0;
+	position: absolute;
+	height: 65%;
+}
 
 #footer{
 	background-color: #fff; /* Grey background */
 	border-top: 2px solid;
-	padding: 2.5%; /* Some padding */
+	padding: 0%; /* Some padding */
 	color: black;
 	position: fixed; /* Fixed position - sit on top of the page */
 	bottom: 0;
 	width: 100%; /* Full width */
+	height: 5%;
 }
