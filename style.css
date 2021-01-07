@@ -1,0 +1,87 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+@font-face { 
+	font-family: Calyces-Regular; 
+	src: url('src/fonts/Calyces-Regular.otf');	
+}
+
+@font-face { 
+	font-family: Calyces-Bold; 
+	src: url('src/fonts/Calyces-Bold.otf');
+}
+
+h1{
+	font-size:7.5vw;
+	font-family: Calyces-Bold;
+	line-height: 100%;
+	text-align: left;
+	word-spacing: -11px;
+}
+
+h2{
+	font-size: 5vw;
+	font-family: Calyces-Bold;
+	line-height: 90%;
+	text-align: left;
+}
+
+h3{
+	font-size: 3vw;
+	font-family: Calyces-Regular;
+	line-height: 90%;
+	text-align: left;
+}
+
+p{
+	font-family: 'PT Serif', serif;
+	font-size: 1.2vw;
+	line-height: 120%;
+	text-align: left;
+}
+
+#header{
+	background-color: #fff; /* Grey background */
+	border-bottom: 2px solid;
+	padding: 2.5%; /* Some padding */
+	color: black;
+	position: fixed; /* Fixed position - sit on top of the page */
+	top: 0;
+	width: 100%; /* Full width */
+	transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+	font-size:7vw;
+	font-family: Calyces-Bold;
+	line-height: 100%;
+	text-align: left;
+	word-spacing: -11px;
+}
+
+.container{
+	background-color: white;
+	margin: 2.5%;
+	width: 80%
+	height: 100%;
+}
+
+hr{
+	height:1px;
+	border-width:20;
+	background-color:black;
+	margin:2%;
+	margin-left:0;
+	width: 100%;
+	text-align:left;"
+}
+
+
+#footer{
+	background-color: #fff; /* Grey background */
+	border-top: 2px solid;
+	padding: 2.5%; /* Some padding */
+	color: black;
+	position: fixed; /* Fixed position - sit on top of the page */
+	bottom: 0;
+	width: 100%; /* Full width */
+}
