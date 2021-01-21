@@ -366,7 +366,7 @@ label {
 @media screen and (max-width: 991px) {
 /* start of large tablet styles */
 	#footer{ height: 5%; }
-	.line{ height: 64%; }
+	.line{ height: 80%; }
 	p{ font-size: 11.5px; }
 	h2{	font-size: 5vw;}
 	h3{ font-size: 3vw;
