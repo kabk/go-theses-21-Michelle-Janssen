@@ -557,22 +557,15 @@ underpants.” <a href="#Zeisler" onclick="openBar()" style="color:black; text-d
 	  }
 }
 
-	window.addEventListener('scroll', 
-	                moveScrollIndicator); 
-	  
-	        const scrollIndicatorElt = 
-	            document.getElementById('scrollIndicator'); 
-	  
-	        const maxHeight = 
-	            window.document.body.scrollHeight 
-	  
-	        function moveScrollIndicator(e) { 
-	            const percentage =  
-	                ((window.scrollY) / maxHeight) * 100; 
-	  
-	            scrollIndicatorElt.style.width 
-	                = percentage + '%'; 
-	        } 
+
+		const scrollIndicatorElt = document.getElementById('scrollIndicator');
+		const maxScrollableHeight = document.body.scrollHeight;
+		window.addEventListener('scroll', moveScrollIndicator);
+    
+    function moveScrollIndicator() {
+  		const percentage = ((window.scrollY) / maxScrollableHeight) * 100;
+  		scrollIndicatorElt.style.width = percentage + '%';
+}
 
 </script>
 </body>
