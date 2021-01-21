@@ -62,13 +62,6 @@ h3{
 	background: red;
 }
 
-#boxImage{
-	width: 95%;
-	height: auto;
-	margin: 0 auto;
-	background: yellow;
-	overflow: hidden;
-}
 
 #boxDefinition{
 	width: 95%;
@@ -80,16 +73,24 @@ h3{
 	background: blue;
 }
 
-.fadein{
-	position: relative;
-	height: 200px;
-	width: 200px;
+.slideshow img{
+	width: 50%;
 }
 
-.fadein img { 
-	position:absolute; 
-	left:0; 
-	top:0; 
+.slideshow{
+	position: relative;
+	margin-left: 25%;
+}
+
+
+.next{
+	animation-name: slowmo;
+	animation-duration: 3s;
+}
+
+@keyframes slowmo {
+	from {opacity: .3}
+	to {opacity: 1}
 }
 
 p{

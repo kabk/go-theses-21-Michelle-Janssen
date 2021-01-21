@@ -16,9 +16,21 @@
 	<div id="boxTitle">
 	<h1>LOOKING AT #FEMVERTISING</h1> <h1 style="	font-family: Calyces-Regular;">THROUGH THE EYES <br>OF FEMINISTS</h1>
 	</div>
-	<div id="boxImage">
-		hallo
+
+	<div class="slideshow">
+		<div class="autoSlide next">
+			<img src="src/images/Redefine.jpg">
+		</div>
+			<img src="src/images/HowTo.jpg">
+		</div>
+		<div class="autoSlide next">
+			<img src="src/images/Compromise.jpg">
+		</div>
+		<div class="autoSlide next">
+			<img src="src/images/First_Encounter.jpg">
+		</div>
 	</div>
+
 	<div id="boxDefinition">
 		<p>#FEMVERTISING<br>
 			<em>NOUN</em></p>
@@ -32,6 +44,20 @@
 
 </body>
 
-<script>
+<script type="text/javascript">
+	var slideShowIndex = 0;
+
+	function mySlideShow(){
+		var i;
+		var autoSlideshow = document.getElementsByClassName("autoSlide");
+		for (i = 0; i < autoSlideshow.length; i++){
+			autoSlideshow[i].style.display = "none";
+		}
+		slideShowIndex++;
+		if (slideShowIndex > autoSlideshow.length){slideShowIndex = 1}
+			autoSlideshow[slideShowIndex -1].style.display = "block";
+		setTimeout(mySlideShow, 5000);
+	}
+	mySlideShow();
 
 </script>
