@@ -361,6 +361,35 @@ label {
     cursor: pointer;
 }
 
+.imageScrollContainer {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  height: 55vh;
+}
+
+.imageBox {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0;
+  line-height: 0;
+}
+
+.imageBox > img {
+  width: 100%;
+  height: calc(100%);
+  object-fit: cover; 
+  transition: .3s;
+}
+
+.imageBox:hover { flex: 1 1 50%; }
+.imageBox:hover > img {
+  width: 100%;
+  height: 100%;
+}
+ 
+
 /* start of desktop styles */
 
 @media screen and (max-width: 991px) {
@@ -368,18 +397,19 @@ label {
 	#footer{ height: 5%; }
 	.line{ height: 80%; }
 	p{ font-size: 11.5px; }
-	h2{	font-size: 5vw;}
-	h3{ font-size: 3vw;
- }
+	h2{	font-size: 45px;}
+	h3{ font-size: 3vw;}
 	#headerNav{font-size: 3vw;}
+	.imageScrollContainer{ height: 80vh; }
+	.imageBox:hover { flex: 1 1 70%; }
 }
 
 @media screen and (max-width: 767px) {
 /* start of medium tablet styles */
-
+	p{ font-size: 20px; }
 }
 
 @media screen and (max-width: 479px) {
 /* start of phone styles */
-
+	p{ font-size: 20px; }
 }
