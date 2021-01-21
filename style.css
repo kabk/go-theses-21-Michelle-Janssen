@@ -104,6 +104,26 @@ h3{
 	to {opacity: 1}
 }
 
+#Thesispage{
+	width: 90%;
+	margin: 0 auto;
+	height: auto;
+	overflow: hidden;
+	padding: 5%;
+	bottom: 0;
+	font-size: 40px;
+	text-align: right;
+}
+
+#Thesispage a{
+	color: black;
+	text-decoration: none;
+}
+
+#Thesispage a:hover{
+	color: black;
+	font-style: italic;
+}
 
 /* end shit landing page: rest is for everything*/
 
