@@ -13,14 +13,11 @@
 
 </head>
 <body>
-	<div id="boxTitle">
-	<h1>LOOKING AT #FEMVERTISING</h1> <h1 style="	font-family: Calyces-Regular;">THROUGH THE EYES <br>OF FEMINISTS</h1>
-	</div>
-
 	<div class="slideshow">
 		<div class="autoSlide next">
 			<img src="src/images/Redefine.jpg">
 		</div>
+		<div class="autoSlide next">
 			<img src="src/images/HowTo.jpg">
 		</div>
 		<div class="autoSlide next">
@@ -31,20 +28,29 @@
 		</div>
 	</div>
 
-	<div id="boxDefinition">
-		<p>#FEMVERTISING<br>
+	<div id="boxTitle">
+	<a href="index.html"> <h1 class="greendot">LOOKING AT #FEMVERTISING</h1> <h1 style=" font-family: Calyces-Regular;" class="orangedot">THROUGH <br> THE EYES OF FEMINISTS</h1></a>
+	</div>
+
+	<div id="boxDefinition" class="orangedot">
+		
+		#FEMVERTISING<br>
 			<em>NOUN</em></p>
-			<br>1. A form of advertising that employs pro-female talent, messages, and imagery to empower women and girls.<em>(SheknowsMedia/Adweek)</em><br>
+			<br>1. A form of advertising that employs pro-female talent, messages, and imagery to empower women <br>and girls.<em> (SheknowsMedia/Adweek)</em><br>
 			2. A form advertising that is taking
 			advantage of feminist imagery and ideas,
-			to change consumers’ brand perspective
+			to change consumers’ <br>brand perspective
 			and sell products.
 	</div>
 
 
-</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+
+<script src="main.js"></script>
+
 
 <script type="text/javascript">
+
 	var slideShowIndex = 0;
 
 	function mySlideShow(){
@@ -56,8 +62,13 @@
 		slideShowIndex++;
 		if (slideShowIndex > autoSlideshow.length){slideShowIndex = 1}
 			autoSlideshow[slideShowIndex -1].style.display = "block";
-		setTimeout(mySlideShow, 5000);
+		setTimeout(mySlideShow, 10000);
 	}
 	mySlideShow();
 
+
+
 </script>
+
+</body>
+</html>

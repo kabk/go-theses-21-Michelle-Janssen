@@ -51,47 +51,61 @@ h3{
 	top: 9vw;
 }
 
+/* Everything for Landing page */
+
+
 #boxTitle{
 	width: 95%;
 	margin: 0 auto;
-	height: auto;
 	padding-bottom: 5%;
 	border-bottom: 5px solid black;
 	overflow: hidden;
 	top:0;
-	background: red;
 }
 
+#boxTitle a{
+	color: black;
+	text-decoration: none;
+}
+
+#boxTitle a:hover{
+	color: black;
+	font-style: italic;
+}
 
 #boxDefinition{
-	width: 95%;
+	width: 90%;
 	margin: 0 auto;
 	height: auto;
 	overflow: hidden;
-	padding-top: 5%;
+	padding: 5%;
 	bottom: 0;
-	background: blue;
 }
 
 .slideshow img{
-	width: 50%;
+	width: 100%;
 }
 
 .slideshow{
-	position: relative;
-	margin-left: 25%;
+	position: fixed;
+	background: white;
+	width: 40%;
+	margin-left: 60%;
+	margin-top: 25%;
 }
-
 
 .next{
 	animation-name: slowmo;
-	animation-duration: 3s;
+	animation-duration: 1s;
 }
 
 @keyframes slowmo {
-	from {opacity: .3}
+	from {opacity: 0}
 	to {opacity: 1}
 }
+
+
+/* end shit landing page: rest is for everything*/
 
 p{
 	font-family: 'PT Serif', serif;
@@ -107,6 +121,7 @@ p a{
 p a:hover{
 	text-decoration: underline;
 }
+
 
 .sidenav{
 	height: 100%;
@@ -444,14 +459,20 @@ label {
 	#headerNav{font-size: 3vw;}
 	.imageScrollContainer{ height: 80vh; }
 	.imageBox:hover { flex: 1 1 70%; }
+	#boxTitle h1{ font-size: 123px; }
+	.slideshow{margin-top: 53%; width: 50%; margin-left: 50%;}
+	#boxDefinition{font-size: 35px;}
 }
 
 @media screen and (max-width: 767px) {
 /* start of medium tablet styles */
 	p{ font-size: 20px; }
+	#boxTitle h1{ font-size: 123px; }
 }
 
 @media screen and (max-width: 479px) {
 /* start of phone styles */
 	p{ font-size: 20px; }
+	#boxTitle h1{ font-size: 123px; }
+
 }
