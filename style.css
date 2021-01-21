@@ -51,6 +51,47 @@ h3{
 	top: 9vw;
 }
 
+#boxTitle{
+	width: 95%;
+	margin: 0 auto;
+	height: auto;
+	padding-bottom: 5%;
+	border-bottom: 5px solid black;
+	overflow: hidden;
+	top:0;
+	background: red;
+}
+
+#boxImage{
+	width: 95%;
+	height: auto;
+	margin: 0 auto;
+	background: yellow;
+	overflow: hidden;
+}
+
+#boxDefinition{
+	width: 95%;
+	margin: 0 auto;
+	height: auto;
+	overflow: hidden;
+	padding-top: 5%;
+	bottom: 0;
+	background: blue;
+}
+
+.fadein{
+	position: relative;
+	height: 200px;
+	width: 200px;
+}
+
+.fadein img { 
+	position:absolute; 
+	left:0; 
+	top:0; 
+}
+
 p{
 	font-family: 'PT Serif', serif;
 	font-size: 15px;
