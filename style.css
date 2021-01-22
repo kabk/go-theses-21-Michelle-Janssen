@@ -502,24 +502,6 @@ label {
   /* some CSS here */
 }
 
-/* #### iPhone 4+ Portrait or Landscape #### */
-@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
-  /* some CSS here */
-  #boxTitle h1{ font-size: 8rem;}
-  #Thesispage {font-size: 8rem; width: 70%;}
-  .slideshow{width: 50%; margin-left: 42%; margin-top: 25%;}
-  
-  #sideContainer {width: 125rem;}
-  #sideContainer a{font-size: 5rem;}
-  #sideContainer a h3{font-size: 3rem;}
-  
-  .title{padding-top: 9%;}
-  p{font-size: 1.5rem;}
-  
-  #footer{height: 8rem;}
-  .line{height: 7rem;}
-}
-
 /* #### iPhone 5 Portrait or Landscape #### */
 @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
   /* some CSS here */
