@@ -490,6 +490,8 @@ label {
   #rightContainer{width: 80rem;}
   .title{padding-top: 9%;}
   .imageScrollContainer{height: 80vh;}
+  .container p {font-size: 1.5rem;}
+
   #footer{height: 7rem;}
 
 /* #### Mobile Phones Landscape #### */
@@ -518,6 +520,7 @@ label {
   #sideContainer a{font-size: 8rem;}
   #sideContainer a h3{font-size: 6rem;}
   
+  .container p {font-size: 1.5rem;}
   .title{padding-top: 9%;}
   
   #footer{height: 8rem;}
