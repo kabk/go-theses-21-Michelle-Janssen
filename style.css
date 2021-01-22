@@ -506,7 +506,6 @@ label {
 @media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
   /* some CSS here */
   #boxTitle h1{ font-size: 8rem;}
-  #boxDefinition p{font-size: 1rem;}
   #Thesispage {font-size: 8rem; width: 70%;}
   .slideshow{width: 50%; margin-left: 42%; margin-top: 25%;}
   
@@ -530,7 +529,6 @@ label {
 @media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3){
   /* some CSS here */
   #boxTitle h1{ font-size: 10rem;}
-  #boxDefinition p{font-size: 1.5rem;}
   #Thesispage {font-size: 10rem; width: 90%;}
   .slideshow{width: 55%; margin-left: 45%; margin-top: 32%;}
   
