@@ -3,6 +3,10 @@ margin: 0;
 padding: 0;
 }
 
+html{
+	font-size: 62.5%;
+}
+
 .center {
   display: block;
   margin-left: auto;
@@ -22,7 +26,7 @@ padding: 0;
 }
 
 h1{
-	font-size:7.5vw;
+	font-size:10rem;
 	font-family: Calyces-Bold;
 	line-height: 100%;
 	text-align: left;
@@ -30,24 +34,40 @@ h1{
 }
 
 h2{
-	font-size: 35px;
+	font-size: 4rem;
 	font-family: Calyces-Bold;
 	line-height: 90%;
 	text-align: left;
 }
 
 h3{
-	font-size: 28px;
+	font-size: 3rem;
 	font-family: Calyces-Regular;
 	line-height: 90%;
 	text-align: left;
 }
 
+p{
+	font-family: 'PT Serif', serif;
+	font-size: 1.5rem;
+	text-align: left;
+}
+
+p a{
+	text-decoration: none;
+	color: black;
+}
+
+p a:hover{
+	text-decoration: underline;
+}
+
+
 .title{
 	position: -webkit-sticky;
 	position: sticky;
 	background: white;
-	padding-top: 9.5%;
+	padding-top: 6%;
 	top: 9vw;
 }
 
@@ -109,7 +129,7 @@ h3{
 	margin: 0 auto;
 	height: auto;
 	overflow: hidden;
-	padding: 5%;
+	padding: 3%;
 	bottom: 0;
 	font-size: 40px;
 	text-align: right;
@@ -126,22 +146,6 @@ h3{
 }
 
 /* end shit landing page: rest is for everything*/
-
-p{
-	font-family: 'PT Serif', serif;
-	font-size: 15px;
-	text-align: left;
-}
-
-p a{
-	text-decoration: none;
-	color: black;
-}
-
-p a:hover{
-	text-decoration: underline;
-}
-
 
 .sidenav{
 	height: 100%;
@@ -175,6 +179,10 @@ p a:hover{
 #sideContainer a{
 	text-decoration: none;
 	color: black;
+	font-size: 4rem;
+	font-family: Calyces-Bold;
+	line-height: 90%;
+	text-align: left;
 }
 
 #sideContainer a:hover{
@@ -225,7 +233,7 @@ p a:hover{
 
 #rightContainer{
 	height: 95%;
-	width: 900px;
+	width: 115rem;
 	background-color: white;
 	overflow-y: scroll;
 }
@@ -235,7 +243,7 @@ p a:hover{
 	text-align: left;
 	list-style-type: none;
 	font-family: 'PT Serif', serif;
-	font-size: 1.2vw;
+	font-size: 2rem;
 
 }
 
@@ -291,7 +299,7 @@ figure{
 
 figcaption{
 	font-family: 'PT Serif', serif;
-	font-size: 1vw;
+	font-size: 1.5rem;
 	line-height: 120%;
 	text-align: left;
 	padding-top: 1%;
@@ -304,10 +312,10 @@ figcaption{
 	position: fixed;
 	float: left;
 	width: 95%;
-	padding: 1.5%;
+	padding: 1%;
 	text-align: center;
 	font-family: Calyces-Bold;
-	font-size: 20px;
+	font-size: 2rem;
 	text-align: center;
 
 }
@@ -374,18 +382,19 @@ hr{
 	width: 0%;
 	z-index: 0;
 	position: absolute;
-	height: 90%;
+	height: 10rem;
 }
 
 #footer{
 	background-color: #fff; /* Grey background */
 	border-top: 2px solid;
-	padding: 0%; /* Some padding */
+	padding: 0; /* Some padding */
+	margin: 0;
 	color: black;
 	position: fixed; /* Fixed position - sit on top of the page */
 	bottom: 0;
 	width: 100%; /* Full width */
-	height: 12%;
+	height: 10rem;
 }
 
 /* Sidenotes, margin notes, figures, captions */
@@ -469,32 +478,78 @@ label {
 }
  
 
-/* start of desktop styles */
+/* #### Mobile Phones Portrait #### */
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+  /* some CSS here */
+  #Thesispage {font-size: 8rem;}
+  .slideshow{width: 55%; margin-left: 45%; margin-top: 32%;}
+  #headerNav{ font-size: 3.2rem; }
+  #sideContainer {width: 170rem;}
+  #sideContainer a{font-size: 8rem;}
+  #sideContainer a h3{font-size: 6rem;}
+  #rightContainer{width: 80rem;}
+  .title{padding-top: 9%;}
+  .imageScrollContainer{height: 80vh;}
+  #footer{height: 7rem;}
 
-@media screen and (max-width: 991px) {
-/* start of large tablet styles */
-	#footer{ height: 5%; }
-	.line{ height: 80%; }
-	p{ font-size: 11.5px; }
-	h2{	font-size: 45px;}
-	h3{ font-size: 3vw;}
-	#headerNav{font-size: 3vw;}
-	.imageScrollContainer{ height: 80vh; }
-	.imageBox:hover { flex: 1 1 70%; }
-	#boxTitle h1{ font-size: 123px; }
-	.slideshow{margin-top: 53%; width: 50%; margin-left: 50%;}
-	#boxDefinition{font-size: 35px;}
+/* #### Mobile Phones Landscape #### */
+@media screen and (max-device-width: 640px) and (orientation: landscape){
+  /* some CSS here */
 }
 
-@media screen and (max-width: 767px) {
-/* start of medium tablet styles */
-	p{ font-size: 20px; }
-	#boxTitle h1{ font-size: 123px; }
+/* #### Mobile Phones Portrait or Landscape #### */
+@media screen and (max-device-width: 640px){
+  /* some CSS here */
 }
 
-@media screen and (max-width: 479px) {
-/* start of phone styles */
-	p{ font-size: 20px; }
-	#boxTitle h1{ font-size: 123px; }
+/* #### iPhone 4+ Portrait or Landscape #### */
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
+  /* some CSS here */
+  #boxTitle h1{ font-size: 8rem;}
+  #boxDefinition p{font-size: 1rem;}
+  #Thesispage {font-size: 8rem; width: 70%;}
+  .slideshow{width: 50%; margin-left: 42%; margin-top: 25%;}
+  
+  #sideContainer {width: 125rem;}
+  #sideContainer a{font-size: 5rem;}
+  #sideContainer a h3{font-size: 3rem;}
+  
+  .title{padding-top: 9%;}
+  p{font-size: 1.1rem;}
+  
+  #footer{height: 8rem;}
+  .line{height: 7rem;}
+}
 
+/* #### iPhone 5 Portrait or Landscape #### */
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
+  /* some CSS here */
+}
+
+/* #### iPhone 6 and 6 plus Portrait or Landscape #### */
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3){
+  /* some CSS here */
+  #boxTitle h1{ font-size: 10rem;}
+  #boxDefinition p{font-size: 1.5rem;}
+  #Thesispage {font-size: 10rem; width: 90%;}
+  .slideshow{width: 55%; margin-left: 45%; margin-top: 32%;}
+  
+  #sideContainer {width: 145rem;}
+  #sideContainer a{font-size: 8rem;}
+  #sideContainer a h3{font-size: 6rem;}
+  
+  .title{padding-top: 9%;}
+  
+  #footer{height: 8rem;}
+  .line{height: 7rem;}
+}
+
+/* #### Tablets Portrait or Landscape #### */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+  /* some CSS here */
+}
+
+/* #### Desktops #### */
+@media screen and (min-width: 1024px){
+  /* some CSS here */
 }
